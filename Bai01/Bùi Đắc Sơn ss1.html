@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            table, th, td{
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        </style>
+        <title>Bùi Đắc Sơn - FE Buổi 1</title>
+    </head>        
+    <body>
+        <a href="#Muc1">HTML</a><br>
+        <a href="#Muc2">Danh sách các bài học</a><br>
+        <a href="#Muc3">Bảng điểm</a><br>
+        <a href="#Muc4">Giảng viên</a><br>
+        <br>
+    <hr>
+    <br>
+    <div id="Muc1">
+        <h1>1.HTML</h1>
+        <p>HTML là ngôn ngữ đánh dấu siêu văn bản, là thành phần chính của tất cả các websites. Mô tả, xây dựng cấu trúc websites. Bao gồm tập hợp các thẻ giữ vai trò hiển thị tương ứng với các thành phần giao diện của websites.</p>
+        <h2>1.1 Thuộc tính HTML</h2>
+        <h3>Vai trò thuộc tính</h3>
+        <ul>
+            <li>Tất cả các phần tử HTML đều có thể có thuộc tính.</li>
+            <li>Thuộc tính bổ sung thêm thông tin cho phần tử HTML.</li>
+            <li>Thuộc tính được đặt ở phần mở thẻ.</li>
+            <li>Thuộc tính thong thường tuân theo định dạng key/value.</li>
+        </ul>
+        <h2>1.2 Thẻ định dạng văn bản</h2>
+        <dl>
+        <dt>Thẻ b</dt>
+        <dd><b>In đậm text</b></dd>
+        <dt>Thẻ del</dt>
+        <dd><del>Text bị xóa, gạch ngang</del></dd>
+        <dt>Thẻ em</dt>
+        <dd><em>In nghiêng text</em></dd>
+        <dt>Thẻ i</dt>
+        <dd><i>In nghiêng text</i></dd>
+        <dt>Thẻ mark</dt>
+        <dd><mark>Làm nổi bật text</mark></dd>
+        <dt>Thẻ pre</dt>
+        <dd><pre>Giữ nguyên định dạng               text</pre></dd>
+        <dt>Thẻ small</dt>
+        <dd><small>Hiển thị chữ kích thước nhỏ hơn</small></dd>
+        <dt>Thẻ strong</dt>
+        <dd><strong>In đậm text</strong></dd>
+        <dt>Thẻ sub</dt>
+        <dd>Hiển thị chũ nhỏ ở dưới so với dòng cơ bản log<sub>2</sub>10</dd>
+        <dt>Thẻ sup</dt>
+        <dd>Hiển thị chữ nhở ở trên so với dòng cơ bản 10*10 = 10<sup>2</sup></dd>
+        <dt>Thẻ a gửi mail</dt>
+        <dd><a href="mailto:son24051994@gmail.com">Send Email</a></dd>
+        </dl>
+    </div>
+    <div id="Muc2">
+        <h1>2.Danh sách các bài học</h1>
+        <ol>
+            <li>Tổng quan HTML</li>
+            <li>Tổng quan CSS</li>
+            <li>Tổng quan Javascript</li>
+            <li>Tổng quan Jquery</li>
+            <li>Tổng quan Bootstrap</li>
+        </ol>
+    </div>
+    <div id="Muc3">
+        <h1>3.Bảng điểm thi giữa kỳ các môn</h1>
+        <table>
+            <caption>Student Marks</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2">Student</th>
+                    <th colspan="4">Marks</th>
+                </tr>
+                <tr>
+                    <th>HTML</th>
+                    <th>CSS</th>
+                    <th>Javascript</th>
+                    <th>Bootstrap</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nguyen Van A</td>
+                    <td>10</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Nguyen Van B</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="Muc4">
+        <h1>4. Thông tin giảng viên</h1>
+        <p>Họ tên: Bùi Chí Hoa</p>
+        <img width="250" height="200" alt="Hình ảnh về giảng viên" src="https://scontent.fpnh22-1.fna.fbcdn.net/v/t1.6435-9/188406680_3968328176581899_8135940702375735235_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=bZHGZdPk5m0AX9UltQ0&_nc_ht=scontent.fpnh22-1.fna&oh=4c32dea2ebd9a6bd734ca7e68cd001f1&oe=60FB24D9">
+    </div>
+    </body>
+    </html>
