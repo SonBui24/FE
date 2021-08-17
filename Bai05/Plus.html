@@ -23,6 +23,18 @@
                 font-size: 30px;
             }
 
+            p.close::before {
+                content: "≪";
+                font-size: 30px;
+                color: deepskyblue;
+            }
+
+            p.close::after {
+                content: "≫";
+                font-size: 30px;
+                color: deepskyblue;
+
+            }
             .background-header {
                 background-color: rgb(10, 114, 199);
                 height: 80px;
@@ -249,7 +261,7 @@
                         <h1 style="text-align: center;">Plus Plus, Where you can shine with us!</h1>
                     </div>
                     <div style="margin-top: 20px;">
-                        <p style="text-align: center; font-weight: 500;">It along established fact that a reader will be distracted by the readable contenr
+                        <p class="close" style="text-align: center; font-weight: 500;">It along established fact that a reader will be distracted by the readable contenr
                         of a page when looking at its layout. The point of using Lorem Ipsum is that it has
                         a more-or-less normal distribution of letters, as opposed to using 'Content here, 
                         content here', making it look like readable English. Many desktop publishing packages 
