@@ -1,0 +1,699 @@
+* {
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 40px;
+    background-color:#282828;
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.container .left-container {
+    height: 100%;
+    width: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.left-container-pointer {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.left-container-pointer:hover {
+    opacity: 0.7;
+}
+
+.container .right-container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    color: white;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+a.choose::after {
+    content: "ˇ";
+    color: white;
+    margin-left: 5px;
+}
+
+.header-main {
+    background-image: url(https://goyacdn.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2020/02/curly_hair_white-1.jpg);
+    height: 850px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.header-main-menu {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-main-menu-left {
+    display: flex;
+    align-items: center;
+}
+
+.active {
+    border-bottom: 1.5px solid #282828;
+}
+
+.header-main-menu-left i {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.header-main-menu-left li {
+    margin-right: 20px;
+    display: inline;
+    cursor: pointer;
+}
+
+.header-main-menu-left li:hover {
+    border-bottom: 1.5px solid #282828;
+}
+
+.logo {
+    padding-right: 170px;
+}
+
+
+.header-main-menu-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-main-menu-right i {
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.header-main-menu-right a {
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.header-main-text {
+    position: absolute;
+    bottom: 40%;
+    right: 0;
+    padding-right: 10%;
+    text-align: right;
+}
+
+.header-main-text .summer {
+    background-color: #282828;
+    color: white;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.header-main-text .night-summer {
+    color: #282828;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.header-main-text .shop-now {
+    color: #686868;
+    font-size: 1.3rem;
+    transition: 0.5s;
+}
+
+.header-main-text .shop-now a:hover {
+    cursor: pointer;
+    border-bottom: 1.5px solid #686868;
+    color: #838383;
+}
+
+.border-choose {
+    border: none;
+    width: 450px;
+    height: 550px;
+    margin: 0px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.choose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    flex-wrap: wrap;
+    margin: 35px 150px;
+    overflow: hidden;
+}
+
+.choose .button-up-shirts {
+    background-image: url(https://goyacdn.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2020/03/banner-shirt2-768x976.jpg.webp);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    margin: 0px 20px;
+    transition: 1s;
+}
+
+.choose .button-up-shirts:hover {
+    transform: scale(1.1);
+}
+
+.text {
+    color: #fff;
+    font-size: 20px;
+    width: 35%;
+    text-align: center;
+    line-height: 1.1;
+    padding-bottom: 20px;
+    position: absolute;
+    top: 37%;
+    left: 38%;
+}
+
+.buy-now {
+    background-color: #fff;
+    color: #282828;
+    text-align: center;
+    padding: 10px 30px;
+    width: 30%;
+    position: absolute;
+    left: 39%;
+    top: 55%;
+}
+
+.buy-now:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.choose .choose-your-price {
+    background-image: url(https://goyacdn.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2020/01/banner-shirt1-768x976.jpg.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.choose .choose-your-price:hover {
+    transform: scale(1.1);
+}
+
+.clearance {
+    background-color: #c7ab62;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.free-ship {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.best-selling {
+    margin: 60px 90px;
+}
+
+.best-selling-conten {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.best-selling-conten h2 {
+    color: #282828;
+    margin-bottom: 28px;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.best-selling-conten p {
+    color: #686868;
+    font-size: 16px;
+    max-width: 50%;
+    margin: auto;
+}
+
+.best-selling-list {
+    width: 100%;
+    height: 580px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.best-selling-item {
+    width: 450px;
+    height: 520px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.heart {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.heart:hover {
+    cursor: pointer;
+}
+
+.new {
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #838383;
+    padding: 0px 6px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.best-selling-img-1 {
+    background-image: url(https://goyacdn.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2019/10/women-cashmere-a4-450x450.jpg.webp);
+    width: 450px;
+    height: 450px;
+    transition: 1s;
+    background-size: cover;
+    background-position: center;
+}
+
+.best-selling-img-1:hover {
+    background-image: url(https://goyacdn.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2019/10/women-cashmere-a2-450x450.jpg.webp);
+    width: 450px;
+    height: 450px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+
+.best-selling-img-2 {
+    background-image: url(https://goyacdn.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2020/01/woman-microbag-a1-450x450.jpg.webp);
+    width: 450px;
+    height: 450px;
+    transition: 1s;
+    background-size: cover;
+    background-position: center;
+}
+
+.best-selling-img-2:hover {
+    background-image: url(https://goyacdn.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2020/01/woman-microbag-a2-450x450.jpg.webp);
+    width: 450px;
+    height: 450px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+
+.best-selling-img-3 {
+    background-image: url(https://goyacdn.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2019/10/women-cashmere-a3-450x450.jpg.webp);
+    width: 450px;
+    height: 450px;
+    transition: 1s;
+    background-size: cover;
+    background-position: center;
+}
+
+.best-selling-img-3:hover {
+    background-image: url(https://goyacdn.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2019/10/women-cashmere-a1-450x450.jpg.webp);
+    width: 450px;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+}
+
+.caption {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.product-name {
+    color: #282828;
+}
+
+.product-name:hover {
+    cursor: pointer;
+}
+
+.product-price {
+    color: #686868;
+}
+
+.testimonials {
+    margin: 120px 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials h2 {
+    color: #282828;
+    margin-bottom: 28px;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.testimonials-conten {
+    color: #686868;
+    width: 778px;
+    font-size: 19px;
+}
+
+.testimonials-model {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials-model img {
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.trending {
+    margin: 120px 90px;
+}
+
+.trending-conten {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.trending-conten h2 {
+    color: #282828;
+    margin-bottom: 28px;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.trending-conten p {
+    color: #686868;
+    font-size: 16px;
+    max-width: 50%;
+    margin: auto;
+}
+
+.trending-list {
+    width: 100%;
+    height: 420px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.trending-item {
+    width: 320px;
+    height: 390px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.trending-img-1 {
+    background-image: url(https://goyacdn.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2019/10/women-cashmere-a4-450x450.jpg.webp);
+    width: 320px;
+    height: 320px;
+    transition: 1s;
+    background-size: cover;
+    background-position: center;
+}
+
+.trending-img-1:hover {
+    background-image: url(https://goyacdn.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2019/10/women-cashmere-a2-450x450.jpg.webp);
+    width: 320px;
+    height: 320px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+
+.trending-img-2 {
+    background-image: url(https://goyacdn.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2020/01/woman-microbag-a1-450x450.jpg.webp);
+    width: 320px;
+    height: 320px;
+    transition: 1s;
+    background-size: cover;
+    background-position: center;
+}
+
+.trending-img-2:hover {
+    background-image: url(https://goyacdn.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2020/01/woman-microbag-a2-450x450.jpg.webp);
+    width: 320px;
+    height: 320px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+
+.trending-img-3 {
+    background-image: url(https://goyacdn.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2019/10/women-cashmere-a3-450x450.jpg.webp);
+    width: 320px;
+    height: 320px;
+    transition: 1s;
+    background-size: cover;
+    background-position: center;
+}
+
+.trending-img-3:hover {
+    background-image: url(https://goyacdn.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2019/10/women-cashmere-a1-450x450.jpg.webp);
+    width: 320px;
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+}
+
+.trending-img-4 {
+    background-image: url(https://goyacdn.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2020/01/woman-hoodie-a6-450x450.jpg.webp);
+    width: 320px;
+    height: 320px;
+    transition: 1s;
+    background-size: cover;
+    background-position: center;
+}
+
+.trending-img-4:hover {
+    background-image: url(https://goyacdn.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2020/01/woman-hoodie-a1-450x450.jpg.webp);
+    width: 320px;
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+}
+
+.sale-off {
+    background-color: #ffffff;
+    color: #ef5c5c;
+    font-size: 12px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.visit {
+    margin: 120px 90px;
+}
+
+.visit-conten {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.visit-conten h2 {
+    color: #282828;
+    margin-bottom: 28px;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.visit-conten p {
+    color: #686868;
+    font-size: 16px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.store-img {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 40px;
+}
+
+.infomation {
+    margin: 60px 90px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5px;
+}
+
+.contact {
+    color: #686868;
+}
+
+.infomation ul {
+    list-style: none;
+}
+
+.infomation .contact li {
+    color: #282828;
+    margin: 15px 0px;
+}
+
+.infomation .contact li:hover {
+    border-bottom: 1.5px solid #282828;
+    cursor: pointer;
+}
+
+.sign-up {
+    margin: 30px 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-up h2 {
+    color: #282828;
+    margin-bottom: 28px;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.sign-up p {
+    color: #686868;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.sign-up input[type="text"] {
+    width: 190px;
+    height: 55px;
+    border: 2px solid #282828;
+    padding: 0px 15px;
+    font-size: 17px;
+}
+
+.sign-up input[type="submit"] {
+    background-color: #282828;
+    color: #ffffff;
+    height: 55px;
+    width: 110px;
+    font-size: 17px;
+    border: none;
+    margin-left: 5px;
+    transition: 1s;
+}
+
+.sign-up input[type="submit"]:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.signature {
+    margin: 35px 210px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.signature p {
+    color: #686868;
+    font-size: 14px;
+}
+
+.signature a {
+    color: #282828;
+    margin-right: 20px;
+}
+
+.signature a:hover {
+    border-bottom: 1.5px solid #282828;
+    cursor: pointer;
+}
+
+.icon {
+    position: absolute;
+    left: -190px;
+    bottom: 0px;
+    background-color: #82b53f;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+}
+
+.icon img {
+    margin-top: 6px;
+    margin-left: 6px;
+}
+
+.price {
+    background-color: #78a938;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    left: -175px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price p {
+    margin-left: -5px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #ffffff;
+    display: inline;
+}
