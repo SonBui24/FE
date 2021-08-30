@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            let year = 2024
+            if (year % 400 == 0) {
+                console.log('Năm nhuận!')
+            }
+            else if (year % 400 != 0 && year % 4 == 0 && year % 100 != 0) {
+                console.log('Năm nhuận!')
+            }
+            else {
+                console.log('Năm không nhuận!')
+            }
+        </script>
+    </body>
+</html>
