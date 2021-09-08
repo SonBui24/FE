@@ -1,0 +1,265 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p.close::before {
+    content: "≪";
+    font-size: 30px;
+    color: deepskyblue;
+    font-weight: 700;
+    position: absolute;
+    left: -20px;
+    top: -30px;
+}
+
+p.close::after {
+    content: "≫";
+    font-size: 30px;
+    color: deepskyblue;
+    position: absolute;
+    right: 320px;
+    top: 640px;
+
+}
+.background-header {
+    background-color: rgb(10, 114, 199);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    font-size: 17px;
+    margin-right: 25px;
+}
+
+.flex-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.background-header-img {
+    background-image: url(banner.jpg);
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(30%);
+}
+
+.background-img {
+    height: 150px;
+    background-image: url('abc.png');
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.flex-plusplus {
+    position: absolute;
+    top: 230px;
+    left: 850px;
+    width: 200px;
+}
+
+.register-now {
+    display: flex;
+    border-radius: 5px;
+    width: 220px;
+    height: 40px;
+    background-color: rgb(10, 114, 199);
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+    transition: 1s;
+}
+
+.register-now:hover {
+    background-color: rgb(177, 146, 11);
+}
+.souldout-list {
+    width: 350px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+.souldout-list:hover {
+    box-shadow: 10px 10px 6px -6px rgb(130, 136, 146);
+}
+
+.souldout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-teachers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.our-teacher-info {
+    width: 500px;
+    height: 200px;
+    margin: 10px;
+}
+
+.float-left-teacher {
+    width: 45%;
+    height: 100%;
+    float: left;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    overflow: hidden;
+}
+
+.background-teacher {
+    background-image: url("my-tam-teacher.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+}
+
+.background-teacher:hover {
+    transform: scale(2);
+}
+
+.float-right-teacher {
+    width: 55%;
+    height: 100%;
+    float: right;
+    transition: 0.5s;
+}
+
+.float-right-teacher:hover {
+    box-shadow: 10px 10px 6px -6px rgb(130, 136, 146);
+}
+
+.border-khoa-hoc {
+    width: 120px;
+    height: 35px;
+    background-color: black;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 150px;
+    z-index: 1;
+}
+
+.box-contact {
+    border: 1px solid rgb(189, 188, 188);
+    height: 400px;
+    width: 100%;
+}
+
+.float-left-contact {
+    width: 50%;
+    height: 100%;
+    background-image: url('abc.png');
+    background-size: cover;
+    background-position: center;
+    float: left;
+}
+
+.float-right-contact {
+    width: 50%;
+    height: 100%;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+input[type="text"] {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(206, 202, 202);
+}
+
+label {
+    display: inline-block;
+    width: 180px;
+}
+
+.float-left-footer {
+    width: 50%;
+    background-color:rgb(60, 130, 230) ;
+    float: left;
+    height: 180px;
+}
+
+.float-right-footer {
+    width: 50%;
+    background-color: rgb(60, 130, 230);
+    float: right;
+    height: 180px;
+}
+
+.plusplus {
+    animation-name: floadting-plus;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes floadting-plus {
+    from {
+        transform: translateY(-200px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.coundown {
+    background-color: rgb(212, 107, 80);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    height: 60px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.content-coundown {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.time-coundown {
+    display: flex
+}
+
+.time-coundown div {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    margin: 10px;
+    color: black;
+    text-align: center;
+}
