@@ -36,7 +36,17 @@
             </div>
         </header>
         <main>
-            <div style="margin-left: 350px; margin-right: 350px;">
+            <div style="margin-left: 300px; margin-right: 300px;">
+                <div id="nguyen-van-a">
+                    <p style="font-weight: 600; margin-bottom: 10px;">Nguyen Van A vừa mua khóa học online</p>
+                    <p style="font-style:italic; font-weight: 300;">11:30 Thur</p>
+                </div>
+                <div class="bought">
+                    <div>
+                        <p>Đã mua</p>
+                    </div>
+                    <div id="count-bought">0</div>
+                </div>
                 <section>
                     <div class="coundown">
                         <div class="content-coundown">
@@ -53,7 +63,11 @@
                 <section>
                     <div class="souldout">
                         <div class="souldout-list">
-                            <div class="background-img"></div>
+                            <div class="background-img">
+                                <div class="buy" id="buy1" onclick="removeBuy1()">
+                                    <button onclick="clickBuy()">Mua</button>
+                                </div>
+                            </div>
                             <div>
                                 <p style="text-align: left; font-size: 20px; margin-left: 10px; margin-top: 20px;">Khóa học lập trình Frontend cơ bản</p>
                                 <p style="font-size: 20px; margin-left: 10px; margin-top: 20px;">
@@ -64,7 +78,11 @@
                             </div>
                         </div>
                         <div class="souldout-list">
-                            <div class="background-img"></div>
+                            <div class="background-img">
+                                <div class="buy" id="buy2" onclick="removeBuy2()">
+                                    <button onclick="clickBuy()">Mua</button>
+                                </div>
+                            </div>
                             <div>
                                 <p style="text-align: left; font-size: 20px; margin-left: 10px; margin-top: 20px;">Khóa học lập trình Frontend cơ bản</p>
                                 <p style="font-size: 20px; margin-left: 10px; margin-top: 20px;">
@@ -75,7 +93,11 @@
                             </div>
                         </div>
                         <div class="souldout-list">
-                            <div class="background-img"></div>
+                            <div class="background-img">
+                                <div class="buy" id="buy3" onclick="removeBuy3()">
+                                    <button onclick="clickBuy()">Mua</button>
+                                </div>
+                            </div>
                             <div>
                                 <p style="text-align: left; font-size: 20px; margin-left: 10px; margin-top: 20px;">Khóa học lập trình Frontend cơ bản</p>
                                 <p style="font-size: 20px; margin-left: 10px; margin-top: 20px;">
@@ -86,7 +108,11 @@
                             </div>
                         </div>
                         <div class="souldout-list">
-                            <div class="background-img"></div>
+                            <div class="background-img">
+                                <div class="buy" id="buy4" onclick="removeBuy4()">
+                                    <button onclick="clickBuy()">Mua</button>
+                                </div>
+                            </div>
                             <div>
                                 <p style="text-align: left; font-size: 20px; margin-left: 10px; margin-top: 20px;">Khóa học lập trình Frontend cơ bản</p>
                                 <p style="font-size: 20px; margin-left: 10px; margin-top: 20px;">
@@ -169,22 +195,22 @@
                             </div>
                             <div class="input">
                                 <label for=fullname>Fullname</label>
-                                <input type="text" id="fullname" name="fullname" placeholder="Fullname">
+                                <input onkeyup="input()" type="text" id="fullname" name="fullname" placeholder="Fullname">
                             </div>
                             <div class="input">
                                 <label for="email">Email</label>
-                                <input type="text" id="email" name="email" placeholder="Email">
+                                <input onkeyup="input()" type="text" id="email" name="email" placeholder="Email">
                             </div>
                             <div class="input">
                                 <label for="phone">Phone</label>
-                                <input type="text" id="phone" name="phone" placeholder="Phone">
+                                <input onkeyup="input()" type="text" id="phone" name="phone" placeholder="Phone">
                             </div>
                             <div class="input">
                                 <label for="age">Age</label>
-                                <input type="text" id="age" name="age" placeholder="Age">
+                                <input onkeyup="input()" type="text" id="age" name="age" placeholder="Age">
                             </div>
-                            <div class="register-now" style="margin-left: 263px;">
-                                <p style="color: white; font-size: 20px; text-transform: uppercase;">register now</p>
+                            <div style="margin-left: 263px;">
+                                <button type="button" class="register-now" style="color: white; font-size: 20px; text-transform: uppercase;" onclick="validateForm()">register now</button>
                             </div>
                         </div>
                     </div>
