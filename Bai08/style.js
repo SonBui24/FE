@@ -90,11 +90,8 @@ function validateForm() {
     }
 }
 
-function input() {
+function inputName() {
     let name = document.getElementById("fullname");
-    let email = document.getElementById("email");
-    let phone = document.getElementById("phone");
-    let age = document.getElementById("age");
 
     if (name.value == null || name.value == "") {
         name.style.border = "1px solid red";
@@ -102,6 +99,10 @@ function input() {
     else {
         name.style.border = "1px solid rgb(206, 202, 202)";
     }
+}
+
+function inputEmail() {
+    let email = document.getElementById("email");
 
     if (email.value == null || email.value == "") {
         email.style.border = "1px solid red";
@@ -109,6 +110,10 @@ function input() {
     else {
         email.style.border = "1px solid rgb(206, 202, 202)";
     }
+}
+
+function inputPhone() {
+    let phone = document.getElementById("phone");
 
     if (phone.value == null || phone.value == "") {
         phone.style.border = "1px solid red";
@@ -116,6 +121,10 @@ function input() {
     else {
         phone.style.border = "1px solid rgb(206, 202, 202)";
     }
+}
+
+function inputAge() {
+    let age = document.getElementById("age");
 
     if (age.value == null || age.value == "") {
         age.style.border = "1px solid red";
