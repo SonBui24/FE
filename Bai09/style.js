@@ -77,14 +77,14 @@ function input(id) {
     }
 }
 
-let postsList = $("#post-list");
-      function createPostElement(postItem) {
-        return (
-          '<p class="title">' +
-          postItem.title +
-          "</p>"
-        );
-      }
+let postsList = $(".post-list");
+function createPostElement(postItem) {
+    return (
+        '<p class="title">' +
+        postItem.title +
+        '</p>'
+    );
+}
 
 
 
@@ -96,7 +96,7 @@ $.ajax({
 
         let post = createPostElement(result[i]);
 
-        postsList.append(post);
+        postsList[i].prepend(post);
         }
     },
     error: function (error) {
