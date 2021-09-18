@@ -25,7 +25,7 @@ setInterval(function() {
 let bought = 1;
 
 function clickBuy() {
-    document.getElementById("count-bought").innerHTML = bought++
+    document.getElementById("count-bought").innerHTML = bought++;
 
 }
 
@@ -90,46 +90,13 @@ function validateForm() {
     }
 }
 
-function inputName() {
-    let name = document.getElementById("fullname");
+function input(id) {
+    let input = document.getElementById(id);
+    let inputValue = input.value
 
-    if (name.value == null || name.value == "") {
-        name.style.border = "1px solid red";
-    }
-    else {
-        name.style.border = "1px solid rgb(206, 202, 202)";
-    }
-}
-
-function inputEmail() {
-    let email = document.getElementById("email");
-
-    if (email.value == null || email.value == "") {
-        email.style.border = "1px solid red";
-    }
-    else {
-        email.style.border = "1px solid rgb(206, 202, 202)";
-    }
-}
-
-function inputPhone() {
-    let phone = document.getElementById("phone");
-
-    if (phone.value == null || phone.value == "") {
-        phone.style.border = "1px solid red";
-    }
-    else {
-        phone.style.border = "1px solid rgb(206, 202, 202)";
-    }
-}
-
-function inputAge() {
-    let age = document.getElementById("age");
-
-    if (age.value == null || age.value == "") {
-        age.style.border = "1px solid red";
-    }
-    else {
-        age.style.border = "1px solid rgb(206, 202, 202)";
+    if (!inputValue) {
+        input.style.borderColor = "red"
+    } else {
+        input.style.borderColor = "rgb(206, 202, 202)"
     }
 }
