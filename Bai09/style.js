@@ -96,7 +96,7 @@ $.ajax({
 
         let post = createPostElement(result[i]);
 
-        postsList[i].prepend(post);
+        $(postsList[i]).prepend(post);
         }
     },
     error: function (error) {
