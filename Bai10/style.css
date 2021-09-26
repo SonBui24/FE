@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bar {
+    margin-top: 50px;
+    
+    margin-bottom: 10px;
+}
+
+.bg-img {
+    background-image: url(bg-masthead.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 574px;
+}
+
+.bg-phone {
+    background-image: url(bg-showcase-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.bg-desktop {
+    background-image: url(bg-showcase-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.bg-baby {
+    background-image: url(bg-showcase-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.icon {
+    color: rgb(53, 85, 231);
+    font-size: 30px;
+    margin-left: 20px;
+}

@@ -41,27 +41,27 @@ setTimeout(function() {
     $("#nguyen-van-a").css("transition", "1s")
 },15000);
 
-$(document).ready(function(){
-    $('#button').click(function() {
-        
-        if (!$("#fullname").val()) {
-        $("#fullname").css("borderColor", "red");
-        }
 
-        if (!$("#email").val()) {
-        $("#email").css("borderColor", "red");
-        }
+$('#button').click(function() {
+        
+    if (!$("#fullname").val()) {
+    $("#fullname").css("borderColor", "red");
+    }
+
+    if (!$("#email").val()) {
+    $("#email").css("borderColor", "red");
+    }
     
 
-        if (!$("#phone").val()) {
-        $("#phone").css("borderColor", "red");
-        }
+    if (!$("#phone").val()) {
+    $("#phone").css("borderColor", "red");
+    }
 
-        if (!$("#age").val()) {
-        $("#age").css("borderColor", "red");
-        }
-    })
+    if (!$("#age").val()) {
+    $("#age").css("borderColor", "red");
+    }
 });
+
 
 $(document).ready(function() {
     
