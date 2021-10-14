@@ -6,13 +6,13 @@
 
 /* Loader stye */
 #preloader {
-    background-color: #222;
     position: fixed;
     top: 0;
     width: 100%;
     height: 100%;
 }
 #preloader .preloader-section {
+    background-color: #222;
     position: fixed;
     top: 0;
     width: 51%;
@@ -110,4 +110,135 @@
 }
 .loaded #preloader {
     visibility: hidden;
+}
+
+.bg-header {
+    background-color: black;
+    height: 81px;
+}
+
+.bg-header h1 {
+    font-family: 'Damion', cursive;;
+    color: #c79c60;
+    margin: 0px 10px;
+}
+.bg-header img {
+    width: 32px;
+    height: 41px;
+    margin-left: 20px;   
+}
+
+.nav-bar a {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 767px) {
+    .nav-bar {
+        display: none;
+    }
+}
+
+.welcome-section {
+    background-color: #282726;
+    height: 885px;
+}
+
+@media only screen and (max-width: 768px) {
+    .welcome-section {
+        height: 785px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .welcome-section {
+        height: 648px;
+    }
+}
+
+.welcome-section .light .light-1 {
+    height: 240px;
+    width: 243px;
+}
+
+.welcome-section .light .light-2 {
+    height: 240px;
+    width: 243px;
+}
+
+@media only screen and (max-width: 767px) {
+    .welcome-section .light .light-1 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .welcome-section .light .light-1 {
+        height: 284px;
+        width: 288px
+    }
+    .welcome-section .light .light-2 {
+        height: 284px;
+        width: 288px
+    }
+}
+
+.welcome-text-h2 {
+    font-family: 'Damion', cursive;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+
+}
+
+@media only screen and (min-width: 978px) {
+    .welcome-text-h2 {
+        font-size: 56px;
+    }
+}
+
+.welcome-line {
+    margin: 0px 10px;
+}
+
+.welcome-content {
+    max-width: 100%;
+}
+
+.welcome-section .welcome-content .cafe-h2 {
+    color: #c79c60;
+    font-family:'Times New Roman', serif;
+    text-transform: uppercase;
+    font-size: 62px;
+    text-align: center;
+}
+
+.welcome-section .welcome-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    width: 650px;
+    text-align: justify;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.gold-text {
+    color: #c79c60;
+}
+
+.gray-text {
+    color: #949494;
+}
+
+.button-details {
+    background-image: url(https://templatemo.com/templates/templatemo_466_cafe_house/img/tm-brown-button.png);
+    width: 196px;
+    height: 46px;
+    color: #c79c60;
+    text-transform: uppercase;
+    margin: auto;
+    font-size: 16px;
 }
