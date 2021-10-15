@@ -4,12 +4,17 @@
     box-sizing: border-box;
   }
 
+h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 /* Loader stye */
 #preloader {
     position: fixed;
     top: 0;
     width: 100%;
     height: 100%;
+    z-index: 100;
 }
 #preloader .preloader-section {
     background-color: #222;
@@ -118,7 +123,7 @@
 }
 
 .bg-header h1 {
-    font-family: 'Damion', cursive;;
+    font-family: 'Damion', cursive;
     color: #c79c60;
     margin: 0px 10px;
 }
@@ -127,6 +132,13 @@
     height: 41px;
     margin-left: 20px;   
 }
+
+a {
+    text-decoration: none;
+}
+ p {
+     font-size: 14px;
+ }
 
 .nav-bar a {
     color: white;
@@ -138,13 +150,14 @@
 
 @media only screen and (max-width: 767px) {
     .nav-bar {
-        display: none;
+        display: none !important;
     }
 }
 
 .welcome-section {
     background-color: #282726;
     height: 885px;
+    position: relative;
 }
 
 @media only screen and (max-width: 768px) {
@@ -153,7 +166,7 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 425px) {
     .welcome-section {
         height: 648px;
     }
@@ -206,6 +219,9 @@
 
 .welcome-content {
     max-width: 100%;
+    position: absolute;
+    top: 0px;
+    margin: 150px 0px 250px 0px;
 }
 
 .welcome-section .welcome-content .cafe-h2 {
@@ -219,10 +235,15 @@
 .welcome-section .welcome-content p {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    width: 650px;
+    max-width: 650px;
     text-align: justify;
     margin: auto;
     margin-bottom: 10px;
+}
+
+.main {
+   max-width: 930px;
+   margin: auto;
 }
 
 .gold-text {
@@ -233,12 +254,184 @@
     color: #949494;
 }
 
-.button-details {
+.blue-text{
+    color: #0066CC;
+}
+
+.green-text {
+    color: #30A430;
+}
+
+.button-brown {
     background-image: url(https://templatemo.com/templates/templatemo_466_cafe_house/img/tm-brown-button.png);
     width: 196px;
     height: 46px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #c79c60;
     text-transform: uppercase;
-    margin: auto;
     font-size: 16px;
+    text-decoration: none;
+}
+.button-brown:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+.img-table {
+    position: absolute;
+    bottom: -100px;
+    max-width: 100%;
+    height: auto;
+}
+
+.light-gray-bg {
+    background-color: #e4e4e4;
+    padding-top: 170px;
+}
+
+.the-best {
+    margin-bottom: 60px;
+}
+
+.the-best .coffee {
+    font-family: 'Damion', cursive;
+    font-size: 30px;
+}
+
+.img-circle{
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.shadow-img {
+    background-image: url(https://templatemo.com/templates/templatemo_466_cafe_house/img/shadow.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 175px;
+    padding-bottom: 7px;
+}
+
+.popular-content h2 {
+    font-family: 'Damion', cursive;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.hr-content {
+    color: #c79c60;
+    width: 100%;
+    height: 41px;
+}
+
+.popular-item-container .popular-item {
+    background-image: url(https://templatemo.com/templates/templatemo_466_cafe_house/img/popular-item-bg.png);
+    background-size: 100% 100%;
+    width: 294px;
+    height: 398px;
+    margin-top:30px;
+    margin-bottom: 80px;
+}
+
+.popular-item:hover {
+    background-image: url(https://templatemo.com/templates/templatemo_466_cafe_house/img/popular-item-bg-hover.png);
+    transition: all 0.3s ease;
+}
+
+.popular-item:hover .first-alphabet {
+    color: #c79c60;
+}
+
+.popular-item:hover .popular-description h3 {
+    color: #c79c60;
+}
+
+.popular-item:hover .popular-description hr {
+    color: #c79c60;
+}
+
+.popular-item:hover .oder-now {
+    color: #c79c60;
+}
+
+.popular-item-container .popular-item .popular-img {
+    width: 284px;
+    height: 166px;
+}
+
+.popular-item-container .popular-item .popular-description {
+    padding: 0px 30px 60px 30px;
+    text-align: center;
+}
+
+.popular-item-container .popular-item .popular-description .first-alphabet {
+    font-family: 'Damion', cursive;
+    font-size: 60px;
+    color: rgb(174,174,174);
+}
+
+.popular-item-container .popular-item .popular-description h3 {
+    font-family: 'Damion', cursive;
+    color: rgb(174,174,174);
+    margin-bottom: 0;
+}
+
+.popular-item-container .popular-item .popular-description hr {
+    width: 234px;
+    color: rgb(174,174,174);
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.popular-item-container .popular-item .oder-now {
+    background-color: rgb(82, 76, 76);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.popular-item-container .popular-item .oder-now .oder-now-link {
+    border: 2px solid rgb(174,174,174);
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    margin-top: 8px;
+    padding-top: 3px;
+    font-family: 'Damion', cursive;
+    font-size: 24px;
+    color: rgb(174,174,174);
+    text-decoration: none;
+}
+
+.special-container {
+    margin-top: 60px;
+}
+
+.special-item {
+    background-color: white;
+    padding: 8px;
+    margin-top: 8px;
+}
+
+.special-img {
+    display: inline-block;
+    max-width: 100%;
+    position: relative;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.special-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    padding: 12px 10px 5px;
 }
