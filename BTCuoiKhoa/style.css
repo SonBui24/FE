@@ -313,6 +313,10 @@ a {
     padding-bottom: 7px;
 }
 
+.popular-content {
+    margin: 0px 10px;
+}
+
 .popular-content h2 {
     font-family: 'Damion', cursive;
     font-size: 30px;
@@ -339,20 +343,25 @@ a {
     transition: all 0.3s ease;
 }
 
-.popular-item:hover .first-alphabet {
+.popular-item-container .popular-item:hover .popular-description .first-alphabet {
     color: #c79c60;
+    transition: all 0.3s ease;
 }
 
-.popular-item:hover .popular-description h3 {
+.popular-item-container .popular-item:hover .popular-description h3 {
     color: #c79c60;
+    transition: all 0.3s ease;
 }
 
-.popular-item:hover .popular-description hr {
+.popular-item-container .popular-item:hover .popular-description hr {
     color: #c79c60;
+    transition: all 0.3s ease;
 }
 
-.popular-item:hover .oder-now {
+.popular-item-container .popular-item:hover .popular-item-container .popular-description .popular-item .oder-now .oder-now-link {
+    border-color: #c79c60;
     color: #c79c60;
+    transition: all 0.3s ease;
 }
 
 .popular-item-container .popular-item .popular-img {
@@ -439,6 +448,10 @@ a {
     padding: 12px 10px 5px;
 }
 
+.daily-menu-container {
+    padding-bottom: 60px;
+    margin: 0px 10px;
+}
 
 .list-menu {
     margin-top: 30px;
@@ -447,7 +460,79 @@ a {
     font-size: 14px;
 }
 
-ol li ::before {
+::marker {
     color: #c79c60; 
     font-weight: 700;
+}
+
+.bg-footer {
+    background-color: #302f2f;
+    padding: 60px 0px;
+}
+
+.footer-container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+@media only screen and (min-width: 992px) {
+    .footer-container{
+    max-width: 970px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-container{
+    max-width: 750px;
+    }
+}
+
+.footer-title {
+    color: white;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.footer-nav {
+    margin-bottom: 40px;
+}
+
+.footer-nav ul {
+    padding: 0;
+}
+
+.footer-nav li {
+    color: white;
+    font-weight: 700;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+
+.footer-nav li a {
+    color: white;
+}
+
+.footer-div {
+    margin-bottom: 40px;
+}
+
+.footer-container p {
+    color: white;
+}
+
+.social-icon {
+    margin-right: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: #505050;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.social-icon:hover {
+    background-color: #c79c60;
+    color: white;
 }
