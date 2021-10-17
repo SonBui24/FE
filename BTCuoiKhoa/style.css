@@ -408,7 +408,7 @@ img {
     transition: all 0.3s ease;
 }
 
-.popular-item-container .popular-item:hover .popular-item-container .popular-description .popular-item .oder-now .oder-now-link {
+.popular-item-container .popular-item:hover .oder-now .oder-now-link {
     border-color: #c79c60;
     color: #c79c60;
     transition: all 0.3s ease;
@@ -517,7 +517,8 @@ img {
 
 .bg-footer {
     background-color: #302f2f;
-    padding: 60px 0px;
+    padding-top: 60px;
+    margin-bottom: 60px;
 }
 
 .footer-container {
@@ -709,13 +710,12 @@ img {
 .form-control {
     border-color: #c79c60;
     border-radius: 10px;
-    outline: none;
 }
 
 .form-control:focus {
     border-color: #7c6a51;
-    outline: none;
-    transition: 0.15s ease;
+    transition: 0.3s ease;
+    box-shadow: 0 0 5pt 2pt #c6c6c6;
 }
 
 .input-form {
